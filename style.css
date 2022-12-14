@@ -1,0 +1,95 @@
+:root {
+ --clr-primary: hsl(25, 97%, 53%);
+ --clr-neutral-900: hsl(216, 12%, 8%);
+ --clr-neutral-700: hsl(213, 19%, 18%);
+ --clr-neutral-500: hsl(216, 12%, 54%);
+ --clr-neutral-300: hsl(217, 12%, 63%);
+ --clr-neutral-100: hsl(0, 0%, 100%);
+ 
+ --ff-regular: 'Overpass', sans-serif;
+
+ --fw-regular: 400;
+ --fw-bold: 700;
+ 
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  h1,
+  h3 {
+    line-height: 1;
+  }
+
+
+  body {
+    font-size: 0.938rem;
+    font-family: var(--ff-regular);
+    background-color: var(--clr-neutral-900);
+    color: var(--clr-neutral-300);
+
+    margin: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .rating-card {
+    --card-padding: 1rem;
+
+    background: linear-gradient(to bottom, hsl(215, 22%, 15%) 5%, hsla(212, 21%, 14%, 0.479));
+  }
+
+  .rating-card__front {
+    padding: var(--card-padding);
+  }
+
+  .icon {
+    content: '';
+    width: 17px;
+    height: 16px;
+    background-image: url("/images/icon-star.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--clr-neutral-700);
+    padding: 1.2rem;
+    border-radius: 50%;
+  }
+
+  .rating-card__title {
+    color: var(--clr-neutral-100);
+  }
