@@ -70,12 +70,17 @@
 
   .rating-card {
     --card-padding: 1rem;
+    --card-spacing: 1rem;
 
     background: linear-gradient(to bottom, hsl(215, 22%, 15%) 5%, hsla(212, 21%, 14%, 0.479));
+    border-radius: 0.5rem;
   }
 
   .rating-card__front {
+    display: flex;
+    flex-direction: column;
     padding: var(--card-padding);
+    gap: var(--card-spacing);
   }
 
   .icon {
@@ -92,4 +97,9 @@
 
   .rating-card__title {
     color: var(--clr-neutral-100);
+  }
+
+
+  .button {
+    background-color: var(--clr-primary);
   }
