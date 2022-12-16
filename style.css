@@ -78,6 +78,7 @@
     background: linear-gradient(to bottom, hsl(215, 22%, 15%) 5%, hsla(212, 21%, 14%, 0.479));
     border-radius: 2rem;
     max-width: 415px;
+    max-height: 413px;
   }
 
   .rating-card__front {
