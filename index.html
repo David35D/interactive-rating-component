@@ -7,11 +7,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Interactive rating component</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <main>
@@ -21,28 +16,33 @@
         <h1 class="rating-card__title">How did we do?</h1>
         <p>Please let us know how we did with your support request. All feedback is appreciated 
           to help us improve our offering!</p>
-        <fieldset class="ratings">
-          <label for="one">
-            <span>1</span>
-            <input type="radio" value="1" name="radiobtn" id="button-one">
-          </label>
-          <label for="two">
-            <span>2</span>
-            <input type="radio" value="2" name="radiobtn" id="button-two">
-          </label>
-          <label for="three">
-            <span>3</span>
-            <input type="radio" value="3" name="radiobtn" id="button-three">
-          </label>
-          <label for="four">
-            <span>4</span>
-            <input type="radio" value="4" name="radiobtn" id="button-four">
-          </label>
-          <label for="five">
-            <span>5</span>
-            <input type="radio" value="5" name="radiobtn" id="button-five">
-          </label>
-        </fieldset>
+        <div class="ratings">
+          <div>
+            <input type="radio" id="one" name="rating" value="1">
+            <label for="one" class="rating"><span class="rating__content">1</span></label>
+          </div>
+
+          <div>
+            <input type="radio" id="two" name="rating" value="2">
+            <label for="two" class="rating"><span class="rating__content">2</span></label>
+          </div>
+
+          <div>
+            <input type="radio" id="three" name="rating" value="3">
+            <label for="three" class="rating"><span class="rating__content">3</span></label>
+          </div>
+
+          <div>
+            <input type="radio" id="four" name="rating" value="4">
+            <label for="four" class="rating"><span class="rating__content">4</span></label>
+          </div>
+
+          <div class="last-btn">
+            <input type="radio" id="five" name="rating" value="5">
+            <label for="five" class="rating"><span class="rating__content">5</span></label>
+          </div>
+
+        </div>
         <button class="button">Submit</button>
       </div>
       <div class="rating-card__back" style="display: none;">
@@ -66,5 +66,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </div>
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>
