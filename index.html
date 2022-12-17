@@ -11,7 +11,7 @@
 <body>
   <main>
     <article class="rating-card">
-      <div class="rating-card__front" style="display: none;">
+      <div class="rating-card__front">
         <div class="icon"></div>
         <h1 class="rating-card__title">How did we do?</h1>
         <p>Please let us know how we did with your support request. All feedback is appreciated 
@@ -43,10 +43,9 @@
           </div>
 
         </div>
-        <button class="button">Submit</button>
+        <button class="button" id="submit-button">Submit</button>
       </div>
-      <div class="rating-card__back" >
-        <!-- Thank you state start -->
+      <div class="rating-card__back hidden">
         <div class="icon"></div>
         <p class="selection-text">You selected <span id="selected-value"></span> out of 5</p>
         <h2 class="rating-card__title">Thank you!</h2>
@@ -62,6 +61,6 @@
       Coded by <a href="#">David</a>.
     </div>
   </footer>
-  <script src="index.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

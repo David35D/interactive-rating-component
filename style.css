@@ -211,6 +211,10 @@
     margin-top: 1.5rem;
   }
 
+  .hidden {
+    display: none;
+  }
+
   footer {
     position: relative;
     top: 110px;
