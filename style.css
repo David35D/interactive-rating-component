@@ -66,12 +66,8 @@
     background-color: var(--clr-neutral-900);
     color: var(--clr-neutral-300);
 
-    margin: 1.5rem;
+    margin: 1rem;
 
-
-  }
-
-  main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,30 +76,19 @@
   }
 
   .rating-card {
-    --card-padding: 3.75rem 2rem;
+    --card-padding: 2rem 1.5rem;
     --card-spacing: 1rem;
 
     background: linear-gradient(to bottom, hsl(215, 22%, 15%) 5%, hsla(212, 21%, 14%, 0.479));
     border-radius: 2rem;
     max-width: 415px;
-    max-height: 413px;
-  }
-
-  @media (min-width: 600px) {
-    body {
-      margin: 0;
-    }
-
-    .rating-card {
-      position: relative;
-      bottom: 16px;
-    }
   }
 
   .rating-card__front {
+    padding: var(--card-padding);
+
     display: flex;
     flex-direction: column;
-    padding: var(--card-padding);
     gap: var(--card-spacing);
   }
 
@@ -115,23 +100,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: var(--clr-neutral-700);
-    background-size: 17.5px;
     padding: 1.4rem;
     border-radius: 50%;
-    position: relative;
-    bottom: 1.5rem;
-    left: 0.15rem;
   }
 
   .rating-card__title {
     color: var(--clr-neutral-100);
-    position: relative;
-    bottom: 3px;
-  }
-
-  .rating-card__title + p {
-    position: relative;
-    bottom: 6px;
   }
 
   .ratings {
@@ -156,12 +130,12 @@
   
   .rating {
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
     position: relative;
     color: var(--clr-neutral-300);
     background-color: var(--clr-neutral-700);
-    width: 3.2rem;
-    height: 3.2rem;
+    width: 2.9rem;
+    height: 2.9rem;
     border-radius: 100%;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
@@ -186,6 +160,7 @@
     background-color: var(--clr-primary);
     text-transform: uppercase;
     letter-spacing: 2.5px;
+    border: none;
     border-radius: 2rem;
     padding: 0.688rem 0.5rem;
     cursor: pointer;
@@ -202,9 +177,37 @@
     background-color: var(--clr-neutral-100);
   }
 
+  footer {
+    position: relative;
+    top: 110px;
+    text-align: center;
+  }
+  
+  footer .attribution {
+    color: white;
+  }
+  
+  footer .attribution a {
+    color: #fb7413;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  
+  footer .attribution a:hover {
+    color: #959eac;
+  }
 
-  .attribution {
-     font-size: 11px; 
-     text-align: center; 
+  @media (min-width: 600px) {
+
+    .rating-card {
+      --card-padding: 3rem 2rem;
+      --card-spacing: 1.1rem;
     }
-  .attribution a { color: hsl(228, 45%, 44%); }
+
+    .rating {
+      font-size: 18px;
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+  }
