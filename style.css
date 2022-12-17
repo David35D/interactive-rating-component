@@ -130,6 +130,12 @@
     background-color: #7c8798;
     color: white;
   }
+
+  .ratings-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
   
   .rating {
     display: inline-block;
