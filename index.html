@@ -11,7 +11,7 @@
 <body>
   <main>
     <article class="rating-card">
-      <div class="rating-card__front">
+      <div class="rating-card__front" style="display: none;">
         <div class="icon"></div>
         <h1 class="rating-card__title">How did we do?</h1>
         <p>Please let us know how we did with your support request. All feedback is appreciated 
@@ -45,17 +45,13 @@
         </div>
         <button class="button">Submit</button>
       </div>
-      <div class="rating-card__back" style="display: none;">
+      <div class="rating-card__back" >
         <!-- Thank you state start -->
-
-        You selected <!-- Add rating here --> out of 5
-
-        Thank you!
-
-        We appreciate you taking the time to give a rating. If you ever need more support, 
-        don’t hesitate to get in touch!
-
-        <!-- Thank you state end -->
+        <div class="icon"></div>
+        <p class="selection-text">You selected <span id="selected-value"></span> out of 5</p>
+        <h2 class="rating-card__title">Thank you!</h2>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>        
       </div>
 
     </article>

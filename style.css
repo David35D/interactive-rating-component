@@ -82,15 +82,18 @@
     background: linear-gradient(to bottom, hsl(215, 22%, 15%) 5%, hsla(212, 21%, 14%, 0.479));
     border-radius: 2rem;
     max-width: 415px;
+    height: 417px;
   }
 
-  .rating-card__front {
+  .rating-card__front,
+  .rating-card__back {
     padding: var(--card-padding);
 
     display: flex;
     flex-direction: column;
     gap: var(--card-spacing);
   }
+
 
   .icon {
     content: '';
@@ -175,6 +178,37 @@
   .button:focus {
     color: var(--clr-primary);
     background-color: var(--clr-neutral-100);
+  }
+
+  .rating-card__back {
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .rating-card__back .icon {
+    background-image: url("/images/illustration-thank-you.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-radius: 0;
+    width: 162px;
+    height: 108px;
+  }
+
+  .rating-card__back .rating-card__title {
+    margin-top: 1.5rem;
+  }
+
+  .rating-card__back p {
+    text-align: center;
+  }
+
+  .selection-text {
+    color: var(--clr-primary);
+    background-color: var(--clr-neutral-700);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1.5rem;
   }
 
   footer {
