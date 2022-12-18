@@ -1,11 +1,11 @@
 'use strict'
 
-const card = document.querySelector(".rating-card");
 const cardFront = document.querySelector(".rating-card__front");
 const cardBack = document.querySelector(".rating-card__back");
-const submitBtn = document.getElementById("submit-button");
+const cardForm = document.querySelector(".ratings-form");
 
-submitBtn.addEventListener('click', function (){
+cardForm.addEventListener('submit', function (e){
+    e.preventDefault();
     const selectedRating = document.querySelector('input[type=radio]:checked').value;
     console.log(selectedRating);
     if(selectedRating !== null) {
